@@ -11,9 +11,10 @@ public class DBObjectPool extends AbstractObjectPool<Connection> {
     private String password;
     static final public String dbname = "utmdb";
 
-    // ODBC - Object Database Connectivity
+    // ODBC - Open Database Connectivity
     // JDBC - Java Database Connectivity
     // DSN ODBC | JDBC
+
     public DBObjectPool(String driverName, String dsn, String username, String password, long expired) {
         super(expired);
 
